@@ -1,3 +1,8 @@
+.env
+/coverage
+/dist
+/lib
+
 # Node (nodejs.org)
 node_modules
 npm-debug.log*
