@@ -1,10 +1,10 @@
 {
   "name": "@magica11y/cauldron",
-  "homepage": "https://magica11y.github.io",
+  "homepage": "https://magica11y.github.io/magica11y",
   "version": "0.1.3",
   "description": "The shared core and build system behind Magica11y",
   "module": "src/index.js",
-  "browser": "dist/magica11y.all.js",
+  "browser": "dist/magica11y.cauldron.js",
   "scripts": {
     "build": "yarn build:dist && yarn build:lib && yarn build:flow",
     "build:dist": "webpack --mode production",
@@ -48,6 +48,9 @@
   "engines": {
     "node": ">=10",
     "npm": ">=6"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT",
   "author": {
