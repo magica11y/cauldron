@@ -6,24 +6,21 @@
   "module": "src/index.js",
   "browser": "dist/magica11y.cauldron.js",
   "scripts": {
-    "build": "yarn build:dist && yarn build:lib && yarn build:flow",
-    "build:dist": "webpack --mode production",
-    "build:lib": "babel --out-dir lib src",
-    "build:flow": "flow-copy-source --verbose src lib",
-    "ci": "yarn test:coverage && yarn build",
-    "clean": "rimraf lib dist coverage",
-    "clean:nuke": "yarn run clean && rimraf node_modules",
-    "pretest": "yarn lint",
-    "test": "jest --maxWorkers=4 --coverage",
-    "test:coverage": "yarn test -- --coverageReporters=text-lcov | coveralls",
-    "prelint": "yarn run typecheck",
-    "lint": "eslint '**/*.js'",
-    "lint:fix": "yarn lint -- --fix",
-    "typecheck": "flow",
-    "prerelease": "yarn test",
-    "release": "yarn version --new-version minor",
-    "release:patch": "yarn release -- --new-version patch",
-    "release:major": "yarn release -- --new-version major"
+    "build": "./build/build.sh",
+    "build:dist": "./build/build-dist.sh",
+    "build:lib": "./build/build-lib.sh",
+    "build:flow": "./build/build-flow.sh",
+    "ci": "./build/ci.sh",
+    "clean": "./build/clean.sh",
+    "clean:nuke": "./build/clean-nuke.sh",
+    "test": "./build/test.sh",
+    "test:coverage": "./build/test-coverage.sh",
+    "lint": "./build/lint.sh",
+    "lint:fix": "./build/lint-fix.sh",
+    "typecheck": "./build/typecheck.sh",
+    "release": "./build/release.sh",
+    "release:minor": "./build/release-minor.sh",
+    "release:major": "./build/release-major.sh"
   },
   "repository": {
     "type": "git",
@@ -59,6 +56,7 @@
     "url": "https://medium.com/@rishabhsrao"
   },
   "files": [
+    "build",
     "dist",
     "lib"
   ],
