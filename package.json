@@ -56,9 +56,16 @@
     "url": "https://medium.com/@rishabhsrao"
   },
   "files": [
+    ".eslintrc.js",
+    ".yarnrc",
+    "babel.config.js",
     "build",
     "dist",
-    "lib"
+    "flow-typed",
+    "jest.config.js",
+    "lib",
+    "prettier.config.js",
+    "webpack.config.js"
   ],
   "dependencies": {
     "@babel/cli": "^7.4.4",
