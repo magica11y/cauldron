@@ -3,7 +3,8 @@
   "homepage": "https://magica11y.github.io/magica11y",
   "version": "1.0.4",
   "description": "The shared core and build system behind Magica11y",
-  "module": "src/index.js",
+  "module": "lib/index.js",
+  "main": "lib/index.js",
   "browser": "dist/magica11y.cauldron.js",
   "scripts": {
     "build": "./build/build.sh",
