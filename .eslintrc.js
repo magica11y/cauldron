@@ -18,4 +18,10 @@ module.exports = {
     SharedArrayBuffer: 'readonly',
   },
   parser: 'babel-eslint',
+  settings: {
+    'import/resolver': {
+      node: {},
+      webpack: {},
+    },
+  },
 };
