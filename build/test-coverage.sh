@@ -1,4 +1,4 @@
 #!/bin/bash
 set -Eeuo pipefail
 
-yarn test --coverageReporters=text-lcov | coveralls
+yarn test --coverageReporters=text-lcov | ./node_modules/.bin/coveralls

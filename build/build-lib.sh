@@ -1,4 +1,4 @@
 #!/bin/bash
 set -Eeuo pipefail
 
-babel --out-dir lib src
+./node_modules/.bin/babel --out-dir lib src

@@ -1,4 +1,4 @@
 #!/bin/bash
 set -Eeuo pipefail
 
-rimraf lib dist coverage
+./node_modules/.bin/rimraf lib dist coverage

@@ -1,4 +1,4 @@
 #!/bin/bash
 set -Eeuo pipefail
 
-flow-copy-source --verbose src lib
+./node_modules/.bin/flow-copy-source --verbose src lib
