@@ -56,8 +56,6 @@
     "url": "https://medium.com/@rishabhsrao"
   },
   "files": [
-    ".eslintignore",
-    ".eslintrc.js",
     ".yarnrc",
     "babel.config.js",
     "build",
@@ -80,7 +78,6 @@
     "eslint": "^6.0.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^6.0.0",
-    "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-plugin-flowtype": "^3.9.1",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jest": "^22.6.4",
