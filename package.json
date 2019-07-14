@@ -58,7 +58,7 @@
   },
   "files": [
     ".eslintignore",
-    ".eslintrc",
+    ".eslintrc.js",
     ".yarnrc",
     "babel.config.js",
     "build",
