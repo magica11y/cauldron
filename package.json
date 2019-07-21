@@ -67,6 +67,7 @@
     "jest.config.js",
     "lib",
     "prettier.config.js",
+    "testing",
     "webpack.config.js"
   ],
   "dependencies": {

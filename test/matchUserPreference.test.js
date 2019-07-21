@@ -1,6 +1,8 @@
 // @flow
 
-import matchUserPreference, { mockWindowMatchMedia } from '../src';
+import matchUserPreference from '../src';
+
+import mockWindowMatchMedia from '../testing/mockWindowMatchMedia';
 
 describe('matchUserPreference()', () => {
   it('returns true if media query matches', () => {
