@@ -2,4 +2,4 @@
 set -Eeuo pipefail
 
 ./node_modules/.bin/babel --out-dir lib src
-./node_modules/.bin/babel --out-dir lib/testing testing
+[ -d "testing" ] && ./node_modules/.bin/babel --out-dir lib/testing testing
