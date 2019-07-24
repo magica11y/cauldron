@@ -1,4 +1,4 @@
 #!/bin/bash
-set -Eeuo pipefail
+set -eoux pipefail
 
 ./node_modules/.bin/flow

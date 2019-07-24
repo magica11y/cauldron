@@ -1,4 +1,4 @@
 #!/bin/bash
-set -Eeuo pipefail
+set -eoux pipefail
 
 yarn release --new-version major
