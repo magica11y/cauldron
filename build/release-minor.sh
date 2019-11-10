@@ -1,4 +1,5 @@
 #!/bin/bash
 set -eoux pipefail
 
-yarn version --new-version minor
+# Overrides `--new-version patch` in `release.sh`
+yarn release --new-version minor
