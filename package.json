@@ -72,7 +72,7 @@
     "webpack.config.js"
   ],
   "dependencies": {
-    "@babel/cli": "^7.4.4",
+    "@babel/cli": "^7.10.1",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-flow": "^7.0.0",
