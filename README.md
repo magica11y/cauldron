@@ -9,7 +9,7 @@ Cauldron
 [![David](https://img.shields.io/david/dev/magica11y/cauldron.svg?style=for-the-badge "Dev Dependencies")](https://david-dm.org/magica11y/cauldron?type=dev)
 [![node](https://img.shields.io/node/v/magica11y.svg?style=for-the-badge "Node engine")](https://www.npmjs.com/package/magica11y)
 [![License](https://img.shields.io/github/license/magica11y/cauldron.svg?style=for-the-badge "MIT license")](LICENSE.md)
-[![Greenkeeper badge](https://badges.greenkeeper.io/magica11y/cauldron.svg)](https://greenkeeper.io/)
+[![Snyk](https://img.shields.io/snyk/vulnerabilities/npm/@magica11y/cauldron?style=for-the-badge)](https://snyk.io/test/github/magica11y/cauldron?targetFile=package.json)
 
 
 # 📜 License
