@@ -1,7 +1,5 @@
 const path = require('path');
 
-const TerserPlugin = require('terser-webpack-plugin');
-
 module.exports = {
   entry: {
     cauldron: './src',
@@ -11,13 +9,6 @@ module.exports = {
     filename: 'magica11y.[name].js',
     library: ['magica11y', '[name]'],
     libraryTarget: 'umd',
-  },
-  optimization: {
-    minimizer: [
-      new TerserPlugin({
-        sourceMap: true,
-      }),
-    ],
   },
   devtool: 'source-map',
   module: {
