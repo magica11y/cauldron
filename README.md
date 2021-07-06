@@ -18,6 +18,6 @@ Cauldron
 
 See [LICENSE.md](LICENSE.md) for more details.
 
-Handcrafted with ❤️ by [Rishabh](https://github.com/rishabh-ink).
+Handcrafted with ❤️ by [Rishabh](https://rishabh.ink).
 
 [![Twitter](https://img.shields.io/twitter/follow/rishabh_ink.svg?style=social)](https://twitter.com/rishabh_ink)
