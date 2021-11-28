@@ -89,7 +89,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "flow-bin": "^0.154.0",
     "flow-copy-source": "^2.0.9",
-    "flow-typed": "^3.3.1",
+    "flow-typed": "^3.5.0",
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
