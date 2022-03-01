@@ -91,7 +91,7 @@
     "flow-copy-source": "^2.0.9",
     "flow-typed": "^3.7.0",
     "jest": "^27.0.6",
-    "prettier": "^2.3.2",
+    "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
     "webpack": "^5.42.1",
     "webpack-cli": "^4.7.2"
