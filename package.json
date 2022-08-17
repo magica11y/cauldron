@@ -87,7 +87,7 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-prettier": "^3.4.0",
-    "flow-bin": "^0.154.0",
+    "flow-bin": "^0.184.0",
     "flow-copy-source": "^2.0.9",
     "flow-typed": "^3.7.0",
     "jest": "^27.5.1",
