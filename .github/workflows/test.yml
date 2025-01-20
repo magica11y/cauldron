@@ -1,8 +1,7 @@
 # See https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-nodejs-packages#publishing-packages-using-yarn
 
 name: Run tests on main
-on:
-  push:
+on: [push]
 env:
   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
   COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
