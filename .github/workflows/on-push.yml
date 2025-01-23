@@ -1,0 +1,29 @@
+name: Pull request
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+
+jobs:
+  call-workflow:
+    uses: ./.github/workflows/build.yml
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+
+        with:
+          node-version: '22.x'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@magica11y'
+
+      - name: Report coverage
+        id: coverage
+        run: yarn coverage

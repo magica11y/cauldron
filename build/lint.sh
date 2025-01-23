@@ -1,4 +1,4 @@
 #!/bin/bash
 set -eoux pipefail
 
-./node_modules/.bin/eslint '**/*.js' $@
+yarn run eslint '**/*.{js,ts,jsx,tsx}'

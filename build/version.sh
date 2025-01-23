@@ -1,4 +1,4 @@
 #!/bin/bash
 set -eoux pipefail
 
-yarn lint --fix
+yarn version --new-version $@

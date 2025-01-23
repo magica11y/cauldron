@@ -1,4 +1,4 @@
 #!/bin/bash
 set -Eeuo pipefail
 
-./node_modules/.bin/rimraf lib dist coverage
+yarn run rimraf lib dist coverage

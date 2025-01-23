@@ -1,0 +1,30 @@
+name: Publish package to NPM Registry
+
+on:
+  push:
+    tags:
+      - '*'
+
+env:
+  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+
+jobs:
+  call-workflow:
+    uses: ./.github/workflows/build.yml
+
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+
+        with:
+          node-version: '22.x'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@magica11y'
+
+      - name: Publish to NPM
+        id: publish-to-npm
+        run: yarn release

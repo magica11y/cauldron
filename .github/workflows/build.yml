@@ -1,21 +1,28 @@
-# See https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-nodejs-packages#publishing-packages-using-yarn
+name: Build
 
-name: Publish to NPM on tagged release
 on:
-  push:
-    tags:
-      - '*'
+  workflow_call:
+
 env:
   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
   COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+
 jobs:
+  call-workflow:
+    uses: ./.github/workflows/test.yml
+
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
+
         with:
           node-version: '22.x'
           registry-url: 'https://registry.npmjs.org'
           scope: '@magica11y'
-      - run: yarn && yarn ci && npm publish --access public
+
+      - name: Build
+        id: build
+        run: yarn build
